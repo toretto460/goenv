@@ -12,5 +12,5 @@ cat install/banner \
 && rm -Rf install
 
 echo "Your env is ready at $(pwd)"
-echo "$(bin/go.sh version)"
+bin/go.sh version
 echo "Let's start creating your app"
