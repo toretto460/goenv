@@ -8,9 +8,9 @@ mkdir goenv && tar xzvf goenv.tar.gz -C goenv --strip-components 1 && rm -f goen
 cd goenv
 bin/init.sh
 
-cat goenv/install/banner \
-&& rm -Rf goenv/install
+cat install/banner \
+&& rm -Rf install
 
-echo "Your env is ready at $(pwd)/goenv"
+echo "Your env is ready at $(pwd)"
 echo "$(bin/go.sh version)"
-echo "Let's start creating your app at goenv/go/src/app"
+echo "Let's start creating your app"
