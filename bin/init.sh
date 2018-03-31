@@ -6,3 +6,4 @@ fi
 
 docker-compose rm -sfv 
 docker-compose up -d 
+docker-compose exec app go version
