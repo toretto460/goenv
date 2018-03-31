@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -L -o goenv.tar.gz https://github.com/toretto460/goenv/archive/0.1.tar.gz
+curl -L -o goenv.tar.gz https://github.com/toretto460/goenv/archive/0.1.1.tar.gz
 
 mkdir goenv && tar xzvf goenv.tar.gz -C goenv --strip-components 1 && rm -f goenv.tar.gz
 
