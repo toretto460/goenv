@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -L -o goenv.tar.gz https://github.com/toretto460/goenv/archive/0.1.1.tar.gz
+curl -L -o goenv.tar.gz https://github.com/toretto460/goenv/archive/0.1.2.tar.gz
 
 mkdir goenv && tar xzvf goenv.tar.gz -C goenv --strip-components 1 && rm -f goenv.tar.gz
 
@@ -8,7 +8,9 @@ mkdir goenv && tar xzvf goenv.tar.gz -C goenv --strip-components 1 && rm -f goen
 cd goenv
 bin/init.sh
 
-cat goenv/banner && rm -f goenv/banner
+cat goenv/install/banner \
+&& rm -Rf goenv/install
+
 echo "Your env is ready at $(pwd)/goenv"
 echo "$(bin/go.sh version)"
 echo "Let's start creating your app at goenv/go/src/app"
