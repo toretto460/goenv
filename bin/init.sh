@@ -5,4 +5,4 @@ if [ ! -e .env ]; then
 fi
 
 docker-compose rm -sfv 
-docker-compose up -d 
+docker-compose up -d
